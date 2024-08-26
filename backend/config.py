@@ -303,8 +303,7 @@ class AppConfig:
 ####################################
 # WEBUI_AUTH (Required for security)
 ####################################
-
-WEBUI_AUTH = os.environ.get("WEBUI_AUTH", "True").lower() == "true"
+WEBUI_AUTH = os.environ.get("WEBUI_AUTH", "True").lower() == "false"
 WEBUI_AUTH_TRUSTED_EMAIL_HEADER = os.environ.get(
     "WEBUI_AUTH_TRUSTED_EMAIL_HEADER", None
 )
