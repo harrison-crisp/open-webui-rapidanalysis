@@ -1,6 +1,7 @@
 #!/bin/bash
 
-MODELNAME="flan-t5"
+REPONAME="Qwen/Qwen2.5-0.5B"
+MODELNAME="Qwen2.5-0.5B"
 BASEDIR="/data"
 
 # if model doesn't exist, fetch and convert it.
@@ -10,11 +11,11 @@ if [ ! -f "$BASEDIR/models/$MODELNAME.gguf" ]; then
   apt update && apt install -y git python3 python3-pip
   python3 -m pip install huggingface_hub
   # download model
-  python3 -c 'from huggingface_hub import snapshot_download; snapshot_download(repo_id="google/flan-t5-base", local_dir="$MODELNAME", local_dir_use_symlinks=False, revision="main")'
+  python3 "$BASEDIR/download_hf_model.py" "$REPONAME" "$BASEDIR/$MODELNAME"
   # convert model
-  python3 /app/convert_hf_to_gguf.py flan-t5 --outfile "$BASEDIR/models/$MODELNAME.gguf" --outtype q8_0
+  python3 /app/convert_hf_to_gguf.py "$BASEDIR/$MODELNAME" --outfile "$BASEDIR/models/$MODELNAME.gguf" --outtype f32
   # cleanup
-  rm -rf flan-t5
+  rm -rf "$BASEDIR/$MODELNAME"
 fi
 
 # run server
