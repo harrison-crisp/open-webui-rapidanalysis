@@ -1,11 +1,12 @@
 #!/bin/bash
 
-REPONAME="Qwen/Qwen2.5-0.5B"
-MODELNAME="Qwen2.5-0.5B"
+REPONAME="TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+MODELNAME="TinyLlama-1.1B-Chat-v1.0"
 BASEDIR="/data"
 
 # if model doesn't exist, fetch and convert it.
 if [ ! -f "$BASEDIR/models/$MODELNAME.gguf" ]; then
+  mkdir -p "$BASEDIR/models"
   echo "INFO: Downloading and converting model, this may take a while..."
   # install requirements
   apt update && apt install -y git python3 python3-pip
