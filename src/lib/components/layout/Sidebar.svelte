@@ -530,6 +530,17 @@
 			</div>
 		</div>
 
+		<div class=" flex flex-col rounded-xl py-3 px-3.5 w-full hover:bg-gray-100 dark:hover:bg-gray-900 transition">
+			<a
+				href="https://rapidanalysis.com"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mr-3 font-medium"
+			>
+				Rapid Analysis
+			</a>
+		</div>
+
 		<div class="px-2.5">
 			<!-- <hr class=" border-gray-900 mb-1 w-full" /> -->
 
