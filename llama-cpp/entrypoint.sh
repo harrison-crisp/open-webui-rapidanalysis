@@ -1,7 +1,7 @@
 #!/bin/bash
 
-REPONAME="TinyLlama/TinyLlama-1.1B-Chat-v1.0"
-MODELNAME="TinyLlama-1.1B-Chat-v1.0"
+REPONAME="Qwen/Qwen2.5-0.5B"
+MODELNAME="Qwen2.5-0.5B"
 BASEDIR="/data"
 
 # if model doesn't exist, fetch and convert it.
