@@ -530,16 +530,27 @@
 			</div>
 		</div>
 
-		<div class=" flex flex-col rounded-xl py-3 px-3.5 w-full hover:bg-gray-100 dark:hover:bg-gray-900 transition">
-			<a
-				href="https://rapidanalysis.com"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="mr-3 font-medium"
-			>
-				Rapid Analysis
-			</a>
-		</div>
+		<div class="flex w-full rounded-xl hover:bg-gray-100 dark:hover:bg-gray-900 transition">
+	<div class="self-center pl-3 py-2 rounded-l-xl bg-transparent">
+		<img
+			crossorigin="anonymous"
+			src="{WEBUI_BASE_URL}/static/favicon.png"
+			class="w-6 h-6 rounded-full object-cover"
+			alt="logo"
+		/>
+	</div>
+
+		<a
+			href="https://rapidanalysis.com"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="w-full rounded-r-xl py-1.5 pl-2.5 pr-4 text-sm bg-transparent dark:text-gray-300 font-medium self-center"
+		>
+			Rapid Analysis
+		</a>
+	</div>
+
+
 
 		<div class="px-2.5">
 			<!-- <hr class=" border-gray-900 mb-1 w-full" /> -->
