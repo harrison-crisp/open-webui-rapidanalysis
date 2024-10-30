@@ -1,7 +1,7 @@
 #!/bin/bash
 
-REPONAME="Qwen/Qwen2.5-0.5B"
-MODELNAME="Qwen2.5-0.5B"
+REPONAME="Qwen/Qwen2.5-0.5B-Instruct"
+MODELNAME="Qwen2.5-0.5B-Instruct"
 BASEDIR="/data"
 
 # if model doesn't exist, fetch and convert it.

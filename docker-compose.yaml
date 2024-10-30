@@ -28,6 +28,8 @@ services:
       - 'WEBUI_SECRET_KEY='
       - 'ENABLE_OPENAI_API=true'
       - 'OPENAI_API_BASE_URL=http://llama-cpp:8081/v1'
+      - 'OPENAI_API_key=none'
+      - 'DEFAULT_MODELS=/data/models/Qwen2.5-0.5B-Instruct.gguf'
     extra_hosts:
       - host.docker.internal:host-gateway
     restart: unless-stopped
