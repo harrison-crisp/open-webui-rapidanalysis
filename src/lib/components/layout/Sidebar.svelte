@@ -535,7 +535,7 @@
 		<img
 			crossorigin="anonymous"
 			src="{WEBUI_BASE_URL}/static/favicon.png"
-			class="w-6 h-6 rounded-full object-cover"
+			border-radius: 50%;
 			alt="logo"
 		/>
 	</div>
